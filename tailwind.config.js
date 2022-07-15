@@ -1,11 +1,16 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+/** @type {import('tailwindcss').Config} */
 
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-  content: ["./app/**/*.{ts,tsx,jsx,js}"],
+  content: ['./app/**/*.{ts,tsx,jsx,js}'],
+  darkMode: 'media',
   theme: {
     extend: {
+      colors: {
+        accent: '#e38356',
+      },
       fontFamily: {
-        'sans': ['Space Grotesk', ...defaultTheme.fontFamily.sans],
+        sans: ['Font', ...defaultTheme.fontFamily.sans],
       },
     },
   },
