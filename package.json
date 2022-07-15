@@ -7,9 +7,11 @@
   "scripts": {
     "build": "run-s build:*",
     "build:css": "npm run generate:css -- --minify",
+    "build:content": "contentlayer build",
     "build:remix": "remix build",
     "dev": "run-p dev:*",
     "dev:css": "npm run generate:css -- --watch",
+    "dev:content": "contentlayer dev",
     "dev:remix": "remix dev",
     "generate:css": "npx tailwindcss -i ./app/styles/tailwind.css -o ./app/tailwind.css"
   },
@@ -18,6 +20,7 @@
     "@remix-run/react": "^1.6.5",
     "@remix-run/vercel": "^1.6.5",
     "@vercel/node": "^2.4.3",
+    "contentlayer": "^0.2.6",
     "phosphor-react": "^1.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
