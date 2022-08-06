@@ -7,16 +7,27 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import styles from './tailwind.css'
+// import styles from './styles/root.css'
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: 'New Remix App',
+  title: 'Gaurav Singh',
+  description:
+    'I’m a frontend developer that loves to create stuff!',
   viewport: 'width=device-width,initial-scale=1',
 })
 
-export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
+export const links: LinksFunction = () => [
+  {
+    rel: 'icon',
+    type: 'image/x-icon',
+    href: '/favicon.ico',
+  },
+  { rel: 'stylesheet', href: styles },
+]
 
 export default function App() {
   return (
@@ -25,12 +36,13 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className='max-w-3xl mx-auto'>
+      <body className='max-w-3xl px-4 mx-auto'>
         <Header />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <Footer />
       </body>
     </html>
   )
