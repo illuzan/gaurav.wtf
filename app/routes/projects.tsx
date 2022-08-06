@@ -48,7 +48,14 @@ export async function loader(args: LoaderArgs) {
     return repo
   }
   const data = await Promise.all(repository.map(getData))
-  return json(data)
+
+  return json(data, {
+    status: 200,
+    headers: {
+      'cache-control':
+        'public, max-age=300, s-maxage=86400, stale-while-revalidate=31540000',
+    },
+  })
 }
 
 const title = 'Projects'

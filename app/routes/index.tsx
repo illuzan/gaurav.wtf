@@ -1,5 +1,17 @@
+import { HeadersFunction } from '@remix-run/node'
 import { DribbbleLogo, FileText, GitBranch } from 'phosphor-react'
 import FeaturedProjects from '~/components/FeaturedProjects'
+
+export const headers: HeadersFunction = ({
+  actionHeaders,
+  loaderHeaders,
+  parentHeaders,
+}) => {
+  return {
+    'cache-control':
+      'public, max-age=300, s-maxage=86400, stale-while-revalidate=31540000',
+  }
+}
 
 const links = [
   {
@@ -55,8 +67,7 @@ export default function Index() {
                 sort of random stuff.
               </p> */}
               <p>
-                I’m a frontend developer based in Delhi, India. I
-                work on{' '}
+                I’m a frontend developer based in Delhi, India. I work on{' '}
                 <a
                   href='https://github.com/AospExtended'
                   className='font-bold transition-colors hover:text-emerald-500'
