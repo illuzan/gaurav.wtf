@@ -1,12 +1,10 @@
-import React from 'react'
 import { Link, NavLink } from '@remix-run/react'
-
-import { ProjectIcon, DesignIcon, BlogIcon, LightModeIcon } from './Icons'
+import { BlogIcon, LightModeIcon, ProjectIcon } from './Icons'
 
 export default function Header() {
   return (
-    <nav className='flex items-center justify-between mt-4 text-lg font-bold '>
-      <Link to='/' className='text-xl text-gray-900'>
+    <nav className='flex items-center justify-between mt-4 mb-16 text-lg font-medium '>
+      <Link to='/' className='text-xl font-bold opacity-80 text-slate-700'>
         Gaurav Singh
       </Link>
       <div className='flex flex-row items-center space-x-1'>
@@ -32,7 +30,7 @@ export default function Header() {
             )
           }
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to='/design'
           className={({ isActive }) =>
             `flex flex-row  px-3 py-2 space-x-1 rounded-lg items-center  hover:bg-neutral-100 transition-all duration-300 ${
@@ -53,7 +51,7 @@ export default function Header() {
               </>
             )
           }
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to='/blog'
           className={({ isActive }) =>
@@ -76,42 +74,7 @@ export default function Header() {
             )
           }
         </NavLink>
-        {/* <NavLink
-          to='/projects'
-          className={({ isActive }) =>
-            isActive
-              ? 'flex flex-row items-center px-4 py-2 space-x-1  bg-slate-200 rounded-xl'
-              : 'flex flex-row px-5 py-3 space-x-1.5'
-          }
-        >
-          <ProjectIcon className='w-6 h-6 ' fill='#0d0d0d' />
-          <span>Projects</span>
-        </NavLink>
-        <NavLink
-          to='/projects'
-          className={({ isActive }) =>
-            isActive
-              ? 'flex flex-row px-5 py-3 space-x-1.5  bg-slate-200 rounded-xl'
-              : 'flex flex-row px-5 py-3 space-x-1.5'
-          }
-        >
-          <ProjectIcon className='w-6 h-6 ' fill='#0d0d0d' />
-          <span>Projects</span>
-        </NavLink> */}
-        {/* <Link to='/projects' className='flex flex-row px-5 py-3 space-x-1'>
-          <ProjectIcon className='w-6 h-6 ' fill='#0d0d0d' />
-          Projects
-        </Link> */}
-        {/*
-        <Link
-          to='/blog'
-          className='flex flex-row items-center px-5 py-3 space-x-1'
-        >
-          <BlogIcon className='w-5 h-5 ' fill='#0d0d0d' />
-          Blog
-        </Link> */}
         <LightModeIcon className='w-6 h-6 !ml-4' fill='#8c8c94' />
-        {/* <button className='text-[#30304080]'>Drk</button> */}
       </div>
     </nav>
   )
