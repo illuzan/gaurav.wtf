@@ -68,6 +68,7 @@ export default function Projects() {
               href={repo.url}
               className='block p-4 border rounded-md shadow-sm '
               target='_blank'
+              key={repo.name}
             >
               <div className='flex items-center justify-between mb-1'>
                 <h3 className='text-xl font-bold'>{repo.name}</h3>

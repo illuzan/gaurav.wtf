@@ -5,7 +5,7 @@ export default function FeaturedProjects() {
         <article className='flex-1 mt-6 overflow-hidden border rounded-lg bg-slate-100 hover:bg-slate-200/80'>
           <img
             className='transition-transform duration-500 ease-in-out rounded-t-lg rounded-b-sm hover:scale-105'
-            src='https://i.imgur.com/x5Y1pZU.png'
+            src='/images/notionfeedback.webp'
             alt=''
           />
           <div className='flex flex-col p-4 transition-colors duration-200 ease-in-out'>
@@ -28,7 +28,7 @@ export default function FeaturedProjects() {
         <article className='flex-1 mt-6 overflow-hidden border rounded-lg bg-slate-100 hover:bg-slate-200/80'>
           <img
             className='transition-transform duration-500 ease-in-out rounded-t-lg rounded-b-sm hover:scale-105'
-            src='https://i.imgur.com/vHkKPmm.png'
+            src='/images/aospextended.webp'
             alt=''
           />
           <div className='flex flex-col p-4 transition-colors duration-200 ease-in-out'>
@@ -36,7 +36,7 @@ export default function FeaturedProjects() {
             <p className='mt-1 text-gray-600'>Open Source Custom Android OS</p>
             <p className='mt-2'>
               <a
-                href='https://www.aospextended.com/'
+                href='https://aosp-extended.vercel.app/'
                 className='text-sky-500 hover:text-sky-600 hover:underline'
               >
                 Visit Webiste
@@ -54,7 +54,7 @@ export default function FeaturedProjects() {
         <article className='flex-1 mt-6 overflow-hidden border rounded-lg bg-slate-100 hover:bg-slate-200/80'>
           <img
             className='transition-transform duration-500 ease-in-out rounded-t-lg rounded-b-sm hover:scale-105'
-            src='https://i.imgur.com/mDLGCdB.png'
+            src='/images/heybin.webp'
             alt=''
           />
           <div className='flex flex-col p-4 transition-colors duration-200 ease-in-out'>

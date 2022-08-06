@@ -84,6 +84,7 @@ export default function Index() {
                   className={`${link.color} focusable flex flex-none cursor-pointer items-center justify-center gap-2 rounded-md  py-2 px-2.5 font-medium text-white shadow-lg shadow-emerald-500/10 transition hover:${link.color}/80  sm:w-auto sm:px-3 sm:pl-2.5`}
                   href={link.url}
                   target='_blank'
+                  key={link.name}
                 >
                   <link.icon
                     size={20}
@@ -98,9 +99,9 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <h1 className='mt-20 mb-10 text-2xl font-bold text-gray-900 lg:text-4xl '>
+      <h2 className='mt-20 mb-10 text-2xl font-bold text-gray-900 lg:text-4xl '>
         Featured Projects
-      </h1>
+      </h2>
       {/* <Project /> */}
       <FeaturedProjects />
     </div>
