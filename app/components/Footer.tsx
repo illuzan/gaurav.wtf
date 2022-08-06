@@ -6,8 +6,12 @@ const Footer = (): JSX.Element => (
     <div className='flex justify-between'>
       <p>Built with Remix, MDX and Tailwind</p>
       <div className='space-x-4'>
-        <a href=''>Twitter</a>
-        <a href=''>GitHub</a>
+        <a href='https://twitter.com/illuzan' target='_blank'>
+          Twitter
+        </a>
+        <a href='https://github.com/illuzan' target='_blank'>
+          GitHub
+        </a>
       </div>
     </div>
     {/* <div className='py-4'>
