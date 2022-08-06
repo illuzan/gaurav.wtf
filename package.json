@@ -19,6 +19,7 @@
     "@remix-run/node": "^1.6.7",
     "@remix-run/react": "^1.6.7",
     "@remix-run/vercel": "^1.6.7",
+    "@splitbee/web": "^0.3.0",
     "@vercel/node": "^2.5.6",
     "contentlayer": "^0.2.7",
     "phosphor-react": "^1.4.1",
