@@ -32,7 +32,7 @@ export default function Blog() {
         posts.map((post, idx) => (
           <div className='mb-16' key={idx}>
             <article className='mb-16'>
-              <Link to='/dashboard'>
+              <Link to={`${post.slug}`}>
                 <img
                   className='mb-4 border border-gray-300 rounded-lg'
                   // src={post.image}
