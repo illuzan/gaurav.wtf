@@ -1,7 +1,7 @@
 import { LoaderArgs } from '@remix-run/node'
 import { useLoaderData, useParams } from '@remix-run/react'
 import React from 'react'
-import { useMDXComponent } from '~/hooks/use-mdx-component'
+import { useMDXComponent } from '~/hooks/useMDXComponent'
 import allPosts from '.contentlayer/generated/Post/_index.json'
 
 export const loader = async (args: LoaderArgs) => {
